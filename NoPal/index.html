@@ -5,17 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Pal</title>
 </head>
 <body>
+  <header>
+    <button onclick="window.location.href='/index.html'">Voltar</button>
+  </header>
   <div class="container">
+
     <h2>Abre aspas %:</h2>
+
     <h1 id="textoDinamico"></h1>
   </div>
 
-
 <script>
-  // Lista de textos que serão exibidos no elemento h1
   var textos = [
   ' "se você tirar o conteúdo do saco..." ', 
   ' "é sobre tomar a PORRA da poção" ', 
@@ -34,26 +37,22 @@
   var indiceAtual = 0;
   var elementoH1 = document.getElementById("textoDinamico");
 
-  // Função para atualizar o texto exibido no elemento h1
   function atualizarTexto() {
-    // Define o texto atual com base no índice atual
+  
     elementoH1.textContent = textos[indiceAtual];
 
-    // Incrementa o índice atual para exibir o próximo texto na próxima chamada da função
+  
     indiceAtual++;
 
-    // Se o índice atual for maior ou igual ao número de textos, volta ao início
+
     if (indiceAtual >= textos.length) {
       indiceAtual = 0;
     }
   }
-
-  // Chama a função para atualizar o texto inicialmente
   atualizarTexto();
-
-  // Define um intervalo para chamar a função atualizarTexto a cada 3 segundos
   setInterval(atualizarTexto, 5000);
 </script>
+
 </body>
 </body>
 </html>
