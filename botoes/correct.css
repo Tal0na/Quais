@@ -1,0 +1,15 @@
+body {
+  background-color: #4caf50;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para o título */
+h1 {
+  color: #1b1b1b;
+  padding-top: 10px;
+}

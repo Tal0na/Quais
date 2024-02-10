@@ -1,0 +1,34 @@
+html {
+  background-color: #161618;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+  
+}
+.container {
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  color: #928c8c;
+  padding-top: 10px;
+  animation: mudarTexto 10s linear infinite;
+}
+
+h2{
+  color: #ffffff;
+  
+}
+
+
