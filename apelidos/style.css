@@ -1,0 +1,60 @@
+html {
+  background-color: #161618;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column; /* Alinhar itens em coluna */
+}
+
+header {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Estilos do botão "Voltar" */
+button {
+  background-color: #9b9999; /* Cor de fundo do botão */
+  color: #000000; /* Cor do texto do botão */
+  padding: 8px 16px; /* Espaçamento interno do botão */
+  border: none; /* Remover borda */
+  border-radius: 4px; /* Arredondar cantos do botão */
+  cursor: pointer; /* Cursor ao passar sobre o botão */
+  font-size: 14px;
+ 
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background-color: #a19f9f; /* Mudar cor de fundo ao passar o mouse */
+}
+
+h2 {
+  color: #9b9999;
+  font-size: 40px;
+}
+
+h1 {
+  color: #ffffff;
+  padding-top: 10px;
+  animation: mudarTexto 15s linear infinite;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px; /* Reduzir o tamanho da fonte do h2 */
+  }
+
+  h1 {
+    font-size: 16px; /* Reduzir o tamanho da fonte do h1 */
+  }
+}

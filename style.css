@@ -64,17 +64,22 @@ a {
 }
 
 .botao1 {
-  background-color: #3498db; /* Blue */
+  background-color: #4CAF50; /* Verde */
 }
 
 .botao2 {
-  background-color: #2ecc71; /* Green */
+  background-color: #FF5722; /* Laranja */
 }
 
 .botao3 {
-  background-color: #e74c3c; /* Red */
+  background-color: #2196F3; /* Azul */
 }
 
 .botao4 {
-  background-color: #f39c12; /* Orange */
+  background-color: #FFC107; /* Amarelo */
 }
+
+.botao5 {
+  background-color: #9C27B0; /* Roxo */
+}
+

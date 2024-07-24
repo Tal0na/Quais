@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pal</title>
+  </head>
+  <body>
+    <header>
+      <button onclick="window.location.href='/index.html'">Voltar</button>
+    </header>
+    <div class="container">
+      <h2>Abre aspas %:</h2>
+
+      <h1 id="textoDinamico"></h1>
+
+      <!-- Novo botão para mostrar frase aleatória -->
+      <button onclick="mostrarFraseAleatoria()">
+        Mostrar Apelido Aleatória
+      </button>
+    </div>
+
+    <script>
+      var textos = [
+        "adestrado",
+        "assíduo",
+        "asfaltado",
+        "alisamento",
+        "apóstolo",
+        "alistamento",
+        "adotado",
+        "alterego",
+        "alternativo",
+        "alambique",
+        "adamastor",
+        "adção",
+        "adelson",
+        "adilson",
+        "adele",
+        "adelina",
+        "adega",
+        "adentro",
+        "adição",
+        "adepto",
+        "administrador",
+        "adiamento",
+        "adiantado",
+        "aditamento",
+        "adotante",
+        "adelaide",
+        "atrasado",
+        "advento",
+        "adivinhação",
+        "adulação",
+        "adolescente",
+        "adoção",
+        "adoração",
+        "adormecer",
+        "aditivo",
+        "adversário",
+        "adubação",
+        "aeroporto",
+        "aeronave",
+        "aerodinâmica",
+        "aerossol",
+        "afável",
+        "afastamento",
+        "afecto",
+        "afegão",
+        "afirmação",
+        "afogado",
+        "afronta",
+        "agente",
+        "agitação",
+        "agonizante",
+        "agradecimento",
+        "agronegócio",
+        "agulha",
+        "ainda",
+        "ajudante",
+        "ajustado",
+        "alcance",
+        "alegoria",
+        "alegrar",
+        "alívio",
+        "alopecia",
+        "alteração",
+        "altruísmo",
+        "análise",
+        "anatomia",
+        "ancoragem",
+        "andamento",
+        "anfíbio",
+        "ânimo",
+        "aniversário",
+        "anotar",
+        "ansiedade",
+        "antecipar",
+        "antena",
+        "antibiótico",
+        "antídoto",
+        "antologia",
+        "antropologia",
+        "aparecer",
+        "apêndice",
+        "aplauso",
+        "apoio",
+        "aposta",
+        "apreensão",
+        "apresentação",
+        "aprovação",
+        "aquisição",
+        "árvore",
+        "assembleia",
+        "assessor",
+        "assistência",
+        "associado",
+        "atitude",
+        "ator",
+        "atrativo",
+        "auditório",
+        "aumento",
+        "autenticação",
+        "auxílio",
+        "avaliador",
+        "aventura",
+        "aviso",
+        "azulejo",
+      ]
+
+      var elementoH1 = document.getElementById("textoDinamico")
+
+      // Função para mostrar frase aleatória
+      function mostrarFraseAleatoria() {
+        var indiceAleatorio = Math.floor(Math.random() * textos.length)
+        elementoH1.textContent = textos[indiceAleatorio]
+      }
+
+      mostrarFraseAleatoria()
+    </script>
+  </body>
+</html>
