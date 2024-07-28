@@ -9,7 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  flex-direction: column; /* Alinhar itens em coluna */
+  flex-direction: column; 
 }
 
 header {
@@ -19,23 +19,23 @@ header {
   left: 0;
 }
 
-/* Estilos do botão "Voltar" */
+
 button {
-  background-color: #9b9999; /* Cor de fundo do botão */
-  color: #000000; /* Cor do texto do botão */
-  padding: 8px 16px; /* Espaçamento interno do botão */
-  border: none; /* Remover borda */
-  border-radius: 4px; /* Arredondar cantos do botão */
-  cursor: pointer; /* Cursor ao passar sobre o botão */
+  background-color: #9b9999; 
+  color: #000000; 
+  padding: 8px 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
   font-size: 14px;
  
   margin-top: 10px;
   font-family: "Courier New", Courier, monospace;
 }
 
-/* Estilo do botão ao passar o mouse */
+
 button:hover {
-  background-color: #a19f9f; /* Mudar cor de fundo ao passar o mouse */
+  background-color: #a19f9f; 
 }
 
 h2 {
@@ -51,10 +51,10 @@ h1 {
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 24px; /* Reduzir o tamanho da fonte do h2 */
+    font-size: 24px; 
   }
 
   h1 {
-    font-size: 16px; /* Reduzir o tamanho da fonte do h1 */
+    font-size: 16px; 
   }
 }
