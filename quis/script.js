@@ -4,7 +4,7 @@ let respostaCorreta = "";
 const questionContainer = document.getElementById('question');
 const resultContainer = document.getElementById('result');
 
-// Função para carregar os dados do quiz
+
 async function carregarDados() {
   const response = await fetch('quizData.json'); // Carrega o JSON
   const data = await response.json(); // Converte para objeto JavaScript
@@ -23,36 +23,34 @@ function gerarPergunta(data) {
   atualizarBotoes(data); // Atualiza os botões
 }
 
-// Função para atualizar os botões de resposta
+
 function atualizarBotoes(data) {
   const buttonsContainer = document.getElementById('buttons-container');
   buttonsContainer.innerHTML = ''; // Limpa os botões
 
-  // Adiciona os autores como botões
+
   autores.forEach(autor => {
     const button = document.createElement('button');
     button.textContent = autor;
-    button.onclick = () => verificarResposta(autor, data); // Passa os dados para verificar
+    button.onclick = () => verificarResposta(autor, data); 
     buttonsContainer.appendChild(button);
   });
 }
 
-// Função para verificar a resposta
+
 function verificarResposta(autor, data) {
   if (autor === respostaCorreta) {
-    currentStreak++; // Aumenta a sequência
+    currentStreak++; 
     resultContainer.textContent = "Correto!";
   } else {
-    currentStreak = 0; // Reseta a sequência
+    currentStreak = 0; 
     resultContainer.textContent = `Incorreto! A resposta correta era ${respostaCorreta}.`;
   }
 
-  // Atualiza a informação da sequência
+
   document.getElementById('streak-info').textContent = `Sequência atual: ${currentStreak}`;
 
-  // Gera uma nova pergunta após 1 segundo
   setTimeout(() => gerarPergunta(data), 1000);
 }
 
-// Chama a função para carregar os dados do JSON
 carregarDados();

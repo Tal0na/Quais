@@ -11,18 +11,16 @@ body {
 
 h1 {
   color: #1b1b1b;
-  margin-top: 20vh;
+  margin-top: 5vh;
   font-size: 48px;
 }
 
-/* Container dos cards */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
-
 
 a {
   display: flex;
@@ -40,53 +38,69 @@ a {
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.3s ease;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-/* Layout para os três primeiros cards (linha superior) */
 .botao1,
 .botao2,
 .botao3 {
-  flex: 1 1 30%; /* Ocupam aproximadamente 30% da largura cada um */
-  max-width: 250px; /* Define a largura máxima dos cards */
+  flex: 1 1 30%; 
+  max-width: 250px; 
 }
 
-/* Layout para os dois últimos cards (linha inferior, centralizados) */
 .botao4,
 .botao5 {
-  flex: 1 1 45%; /* Ocupam cerca de 45% da largura cada um */
-  max-width: 250px; /* Define a largura máxima dos cards */
+  flex: 1 1 45%; 
+  max-width: 250px; 
   justify-content: center;
 }
 
-/* Efeito de hover */
+
 a:hover {
   transform: scale(1.05);
-  background-color: #555;
 }
 
-/* Cores específicas para cada botão */
 .botao1 {
-  background-color: #4caf50; /* Verde */
+  background-color: #4caf50; 
+}
+
+.botao1:hover {
+  background-color: #388e3c; /* Verde mais escuro */
 }
 
 .botao2 {
-  background-color: #ff5722; /* Laranja */
+  background-color: #dc133c; 
 }
 
-.botao3 {
-  background-color: #2196f3; /* Azul */
-}
-
-.botao4 {
-  background-color: #ffc107; /* Amarelo */
+.botao2:hover {
+  background-color: #a50024; /* Vermelho mais escuro */
 }
 
 .botao5 {
-  background-color: #9c27b0; /* Roxo */
+  background-color: #2196f3; 
 }
 
-/* Estilos responsivos para telas maiores */
+.botao5:hover {
+  background-color: #1976d2; /* Azul mais escuro */
+}
+
+.botao4 {
+  background-color: #ffc107; 
+}
+
+.botao4:hover {
+  background-color: #ff8f00; /* Amarelo mais escuro */
+}
+
+.botao3 {
+  background-color: #9c27b0; 
+}
+
+.botao3:hover {
+  background-color: #7b1fa2; /* Roxo mais escuro */
+}
+
+
 @media (min-width: 768px) {
   a {
     width: 300px;
