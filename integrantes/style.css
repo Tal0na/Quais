@@ -1,0 +1,100 @@
+html {
+  background-color: #e8eaee;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1b1b1b;
+  margin-top: 20vh;
+  font-size: 48px;
+}
+
+/* Container dos cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Layout para os três primeiros cards (linha superior) */
+.botao1,
+.botao2,
+.botao3 {
+  flex: 1 1 30%; /* Ocupam aproximadamente 30% da largura cada um */
+  max-width: 250px; /* Define a largura máxima dos cards */
+}
+
+/* Layout para os dois últimos cards (linha inferior, centralizados) */
+.botao4,
+.botao5 {
+  flex: 1 1 45%; /* Ocupam cerca de 45% da largura cada um */
+  max-width: 250px; /* Define a largura máxima dos cards */
+  justify-content: center;
+}
+
+/* Efeito de hover */
+a:hover {
+  transform: scale(1.05);
+  background-color: #555;
+}
+
+/* Cores específicas para cada botão */
+.botao1 {
+  background-color: #4caf50; /* Verde */
+}
+
+.botao2 {
+  background-color: #ff5722; /* Laranja */
+}
+
+.botao3 {
+  background-color: #2196f3; /* Azul */
+}
+
+.botao4 {
+  background-color: #ffc107; /* Amarelo */
+}
+
+.botao5 {
+  background-color: #9c27b0; /* Roxo */
+}
+
+/* Estilos responsivos para telas maiores */
+@media (min-width: 768px) {
+  a {
+    width: 300px;
+    height: 180px;
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}

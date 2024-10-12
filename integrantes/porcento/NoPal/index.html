@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/porcento/style.css">
+  <title>Pal</title>
+</head>
+<body>
+  <header>
+    <button onclick="window.location.href='/index.html'">Voltar</button>
+  </header>
+  <div class="container">
+
+    <h2>Abre aspas %:</h2>
+
+    <h1 id="textoDinamico"></h1>
+  </div>
+
+<script>
+  var textos = [
+  ' "se você tirar o conteúdo do saco..." ', 
+  ' "é sobre tomar a PORRA da poção" ', 
+  ' "tem um pal que ta fraturado e um que ta com indigestão" ', 
+  ' "depois eu tenho q pesquisa como que cuida de um pal" ', 
+  ' "cara to muito curioso com o que dá pra fazer com esse tentáculo que tá na minha mão" ',
+  ' "oloco da pra colocar pal de sentinela" ',
+  ' "os pal são muito zika, são muito violento" ',
+  ' "então quer dizer que eu tenho um pal preguiçoso?" ',
+  ' "tem como acariciar o pal! ele fica felizinho!" ',
+  ' "era pra eu tá me entretendo com os pals agora" ',
+  ' "olha os pal infileiradinho levando ferro" ',
+  ' "vi um pal muito zika" ',
+
+];
+  var indiceAtual = 0;
+  var elementoH1 = document.getElementById("textoDinamico");
+
+  function atualizarTexto() {
+  
+    elementoH1.textContent = textos[indiceAtual];
+
+  
+    indiceAtual++;
+
+
+    if (indiceAtual >= textos.length) {
+      indiceAtual = 0;
+    }
+  }
+  atualizarTexto();
+  setInterval(atualizarTexto, 5000);
+</script>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,95 @@
+html {
+  background-color: #e8eaee;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  padding: 10px; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+}
+
+button {
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: #000000; /* Cor do texto do botão */
+  padding: 8px 16px; /* Espaçamento interno do botão */
+  border: none; /* Remover borda */
+  border-radius: 4px; /* Arredondar cantos do botão */
+  cursor: pointer; /* Cursor ao passar sobre o botão */
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background-color: #8d8d8d; /* Mudar cor de fundo ao passar o mouse */
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  height: 60vh;
+  font-size: 40px;
+}
+
+h1 {
+  color: #1b1b1b;
+  padding-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-bottom: 10px;
+  border-color: #1b1b1b;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  animation: clickAnimation 0.3s ease;
+}
+.nao {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-color: #1b1b1b;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonFugindo {
+  transform: translate(100px, -50px);
+}
+.nao {
+  background-color: red;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

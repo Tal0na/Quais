@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pal</title>
+  </head>
+  <body>
+    <header>
+      <button onclick="window.location.href='/index.html'">Voltar</button>
+    </header>
+    <div class="container">
+      <h2>Apelidos do %:</h2>
+
+      <h1 id="textoDinamico"></h1>
+
+      <!-- Novo botão para mostrar frase aleatória -->
+      <button onclick="mostrarFraseAleatoria()">
+        Mostrar Apelido Aleatória
+      </button>
+    </div>
+
+    <script>
+      var textos = [
+        "Julia",
+        "Djulya",
+        "Ju",
+        "lia",
+        "Lynx",
+      ]
+
+      var elementoH1 = document.getElementById("textoDinamico")
+
+      function mostrarFraseAleatoria() {
+        var indiceAleatorio = Math.floor(Math.random() * textos.length)
+        elementoH1.textContent = textos[indiceAleatorio]
+      }
+
+      mostrarFraseAleatoria()
+    </script>
+  </body>
+</html>
