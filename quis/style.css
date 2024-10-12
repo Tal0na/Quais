@@ -25,6 +25,12 @@ h1 {
   align-items: center;
 }
 
+.result {
+
+font-size: 240px;
+
+}
+
 a {
   display: inline-block;
   width: 150px;
