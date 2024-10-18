@@ -1,0 +1,157 @@
+/* Estilo geral */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Um tom claro e agradável */
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  height: 100%;
+}
+
+h1 {
+  margin-top: 60px;
+  font-size: 32px; 
+  color: #8d8d8d;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question {
+  margin-top: 20px;
+  font-size: 32px; 
+  font-weight: bold;
+  color: #333;
+  text-align: center; 
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto; 
+  word-wrap: break-word; 
+}
+
+#buttons-container {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-top: 30px;
+  gap: 3px; 
+}
+
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#streak-info {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4CAF50; 
+}
+
+
+button {
+  padding: 10px 15px; 
+  font-size: 16px; /* Diminuindo o tamanho da fonte dos botões */
+  font-weight: bold;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Cores personalizadas para os botões */
+.botao1 {
+  background-color: #4caf50;  /* Vermelho */
+}
+
+.botao1:hover {
+  background-color: #388e3c; /* Vermelho mais escuro */
+}
+
+/* Botão 2 - Azul Claro */
+.botao2 {
+  background-color: #dc133c; /* Azul claro */
+}
+
+.botao2:hover {
+  background-color: #a50024; /* Azul claro mais escuro */
+}
+
+/* Botão 3 - Verde */
+.botao3 {
+  background-color: #ffc107; /* Verde */
+}
+
+.botao3:hover {
+  background-color: #ff8f00; /* Verde mais escuro */
+}
+
+/* Botão 4 - Amarelo Claro */
+.botao4 {
+  background-color: #e91e63; /* Rosa */
+}
+
+.botao4:hover {
+  background-color: #d81b60; /* Rosa mais escuro */
+}
+
+/* Botão 5 - Laranja Claro */
+.botao5 {
+  background-color: #f44336; /* Vermelho */
+}
+
+.botao5:hover {
+  background-color: #d32f2f; /* Vermelho mais escuro */
+}
+
+/* Botão 6 - Cinza */
+.botao6 {
+  background-color: #9c27b0; /* Cinza */
+}
+
+.botao6:hover {
+  background-color: #7b1fa2; /* Cinza mais escuro */
+}
+
+/* Botão 7 - Verde Limão */
+.botao7 {
+  background-color: #00bcd4; /* Azul turquesa */
+}
+
+.botao7:hover {
+  background-color: #0097a7; /* Azul turquesa mais escuro */
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 22px; /* Aumenta o tamanho do título em telas maiores */
+  }
+
+  button {
+    font-size: 14px; /* Aumenta o tamanho da fonte dos botões */
+    padding: 12px 20px; /* Aumenta o espaçamento interno dos botões */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px; /* Título menor em telas pequenas */
+  }
+
+  button {
+    font-size: 16px; /* Fonte menor em telas pequenas */
+    padding: 8px 15px; /* Menor espaçamento interno */
+  }
+}
