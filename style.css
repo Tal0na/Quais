@@ -10,57 +10,32 @@ body {
 
 h1 {
   color: #1b1b1b;
-  padding-top: 10px;
   text-align: center;
   margin-top: 20vh;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .container {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Alinha os botões ao centro */
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 20px; /* Espaçamento acima dos botões */
 }
 
 a {
-  display: inline-block;
-  width: 150px; 
-  padding: 10px 20px;
- 
+  display: inline-flex; /* Altera para inline-flex para centralizar conteúdo */
+  justify-content: center; /* Centraliza o texto no botão */
+  align-items: center; /* Centraliza verticalmente o texto */
+  width: 200px; /* Largura fixa para todos os botões */
+  height: 50px; /* Altura fixa para todos os botões */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  border: none;
   cursor: pointer;
-  margin: 5px;
+  margin: 10px; /* Espaçamento entre os botões */
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 64px;
-  }
-  a {
-    width: auto;
-  }
-  a {
-    display: inline-block;
-    width: 204px;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
-    text-align: center;
-  }
-
-
+  transition: background-color 0.3s; /* Transição suave para mudança de cor */
 }
 
 .botao1 {
@@ -79,7 +54,17 @@ a {
   background-color: #FFC107; /* Amarelo */
 }
 
-.botao5 {
-  background-color: #9C27B0; /* Roxo */
+a:hover {
+  opacity: 0.9; /* Levemente mais escuro ao passar o mouse */
 }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px; /* Aumenta o tamanho do título em telas maiores */
+  }
+  a {
+    width: 200px; /* Largura fixa para dispositivos maiores */
+    height: 50px; /* Mantém a altura dos botões */
+    font-size: 24px; /* Aumenta a fonte dos botões em telas maiores */
+  }
+}
