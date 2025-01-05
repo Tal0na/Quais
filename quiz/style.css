@@ -1,8 +1,16 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   height: 100vh;
+  background-color: #f5f5f5;
 }
 
 h1 {
@@ -12,11 +20,14 @@ h1 {
   text-align: center;
 }
 
+/* Estilização da Container Principal */
 .container {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #question {
@@ -36,7 +47,7 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
-  gap: 3px;
+  gap: 10px;
 }
 
 #result {
@@ -54,107 +65,111 @@ h1 {
   text-align: center;
 }
 
+/* Estilização de Botões */
 button {
-  padding: 10px 15px;
-  font-size: 24px; /* Diminuindo o tamanho da fonte dos botões */
+  padding: 10px 20px;
+  font-size: 24px;
   font-weight: bold;
-  border-radius: 8px; /* Bordas mais arredondadas */
+  border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
   color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .voltar {
   margin-top: 10px;
   margin-left: 10px;
-  padding: 10px 20px;
   background-color: #4caf50;
- 
 }
 
-/* Cores personalizadas para os botões */
+/* Botões Personalizados */
 .botao1 {
-  background-color: #4caf50; /* Vermelho */
+  background-color: #4caf50;
 }
 
 .botao1:hover {
-  background-color: #388e3c; /* Vermelho mais escuro */
+  background-color: #388e3c;
 }
 
-/* Botão 2 - Azul Claro */
 .botao2 {
-  background-color: #dc133c; /* Azul claro */
+  background-color: #dc133c;
 }
 
 .botao2:hover {
-  background-color: #a50024; /* Azul claro mais escuro */
+  background-color: #a50024;
 }
 
-/* Botão 3 - Verde */
 .botao3 {
-  background-color: #ffc107; /* Verde */
+  background-color: #ffc107;
 }
 
 .botao3:hover {
-  background-color: #ff8f00; /* Verde mais escuro */
+  background-color: #ff8f00;
 }
 
-/* Botão 4 - Amarelo Claro */
 .botao4 {
-  background-color: #e91e63; /* Rosa */
+  background-color: #e91e63;
 }
 
 .botao4:hover {
-  background-color: #d81b60; /* Rosa mais escuro */
+  background-color: #d81b60;
 }
 
-/* Botão 5 - Laranja Claro */
 .botao5 {
-  background-color: #f44336; /* Vermelho */
+  background-color: #f44336;
 }
 
 .botao5:hover {
-  background-color: #d32f2f; /* Vermelho mais escuro */
+  background-color: #d32f2f;
 }
 
-/* Botão 6 - Cinza */
 .botao6 {
-  background-color: #9c27b0; /* Cinza */
+  background-color: #9c27b0;
 }
 
 .botao6:hover {
-  background-color: #7b1fa2; /* Cinza mais escuro */
+  background-color: #7b1fa2;
 }
 
-/* Botão 7 - Verde Limão */
 .botao7 {
-  background-color: #00bcd4; /* Azul turquesa */
+  background-color: #00bcd4;
 }
 
 .botao7:hover {
-  background-color: #0097a7; /* Azul turquesa mais escuro */
+  background-color: #0097a7;
 }
 
 /* Responsividade */
 @media (min-width: 768px) {
   h1 {
-    font-size: 22px; /* Aumenta o tamanho do título em telas maiores */
+    font-size: 22px;
   }
 
   button {
-    font-size: 14px; /* Aumenta o tamanho da fonte dos botões */
-    padding: 12px 20px; /* Aumenta o espaçamento interno dos botões */
+    font-size: 18px;
+    padding: 12px 20px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 28px; /* Título menor em telas pequenas */
+    font-size: 28px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
   }
 
   button {
-    font-size: 12px; /* Fonte menor em telas pequenas */
-    padding: 8px 15px; /* Menor espaçamento interno */
+    font-size: 14px;
+    padding: 8px 15px;
   }
 }

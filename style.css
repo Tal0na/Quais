@@ -1,3 +1,10 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   background-color: #e8eaee;
 }
@@ -5,37 +12,92 @@ html {
 body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
-  padding: 20px; 
+  padding: 0;
 }
 
-h1 {
+/* Header */
+header {
+  background-color: #1b1b1b; /* Cor de fundo do header */
+  color: #ffffff; /* Cor do texto */
+  padding: 0 20px; /* Espaçamento interno, sem padding superior e inferior */
+  height: 80px; /* Altura fixa do header */
+  display: flex;
+  justify-content: space-between; /* Espaça título e links */
+  align-items: center; /* Centraliza itens verticalmente */
+  position: sticky; /* Fixa o header no topo ao rolar a página */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); /* Sombra para destaque */
+}
+
+/* Título */
+header h1 {
+  font-size: 24px; /* Tamanho do título */
+  font-weight: bold;
+  color: #4caf50; /* Cor do título */
+  margin: 0; /* Remove a margem do título */
+}
+
+/* Navegação */
+header ul {
+  list-style: none; /* Remove marcadores de lista */
+  display: flex; /* Organiza os links em linha */
+  gap: 20px; /* Espaçamento entre os links */
+  justify-content: flex-end; /* Alinha os links à direita */
+}
+
+header ul li {
+  font-size: 16px; /* Tamanho da fonte dos links */
+  font-weight: bold;
+}
+
+header ul li a {
+  color: #ffffff; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado */
+  padding: 8px 12px; /* Adiciona espaçamento interno */
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background-color 0.3s, transform 0.2s; /* Animações suaves */
+}
+
+header ul li a:hover {
+  background-color: #4caf50; /* Fundo verde ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom */
+  color: #ffffff; /* Mantém o texto branco */
+}
+
+/* Título Principal */
+h1.main-title {
   color: #1b1b1b;
   text-align: center;
   margin-top: 20vh;
-  font-size: 24px;
+  font-size: 32px;
 }
 
+/* Container Principal */
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Alinha os botões ao centro */
+  justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Espaçamento acima dos botões */
+  margin-top: 20px;
 }
 
+/* Links e Botões */
 a {
-  display: inline-flex; /* Altera para inline-flex para centralizar conteúdo */
-  justify-content: center; /* Centraliza o texto no botão */
-  align-items: center; /* Centraliza verticalmente o texto */
-  width: 200px; /* Largura fixa para todos os botões */
-  height: 50px; /* Altura fixa para todos os botões */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px; /* Espaçamento entre os botões */
+  margin: 10px;
   text-align: center;
-  transition: background-color 0.3s; /* Transição suave para mudança de cor */
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .botao1 {
@@ -55,16 +117,50 @@ a {
 }
 
 a:hover {
-  opacity: 0.9; /* Levemente mais escuro ao passar o mouse */
+  transform: translateY(-5px); /* Elevação ao passar o mouse */
+  opacity: 0.9;
 }
 
+/* Responsividade */
 @media (min-width: 768px) {
-  h1 {
-    font-size: 80px; /* Aumenta o tamanho do título em telas maiores */
+  h1.main-title {
+    font-size: 48px; /* Aumenta o tamanho do título em telas maiores */
   }
   a {
-    width: 200px; /* Largura fixa para dispositivos maiores */
-    height: 50px; /* Mantém a altura dos botões */
-    font-size: 24px; /* Aumenta a fonte dos botões em telas maiores */
+    width: 220px;
+    height: 60px;
+    font-size: 18px;
   }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 100px; /* Aumenta a altura para telas menores */
+  }
+
+  header nav {
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+
+  header h1 {
+    font-size: 22px; /* Tamanho menor do título */
+  }
+
+  header ul {
+    flex-direction: column; /* Alinha os links em coluna */
+    gap: 10px; /* Espaçamento entre os links */
+  }
+}
+
+h1.main-title {
+  font-size: 24px;
+  margin-top: 15vh;
+}
+
+a {
+  width: 160px;
+  height: 45px;
+  font-size: 14px;
 }
